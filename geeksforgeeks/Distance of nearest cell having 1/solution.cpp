@@ -7,7 +7,6 @@ using namespace std;
 class Solution 
 {
     public:
-    //Function to find distance of nearest 1 in the grid for each cell.
 	vector<vector<int>>nearest(vector<vector<int>>grid){
     int H = grid.size();
     int W = grid[0].size();
