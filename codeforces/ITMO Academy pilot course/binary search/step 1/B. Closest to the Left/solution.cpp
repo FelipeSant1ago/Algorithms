@@ -6,11 +6,49 @@
 
 using namespace std;
 
+int binarySearch(vi& arr, int x){
+    int l = 0;
+    int r = arr.size()-1;
+    int res = -1;
+    int mid;
+
+    while(l <= r){
+        mid = (l + r)/2;
+
+        if(arr[mid] == x){
+            if( mid > res) res = mid;
+            l = mid + 1;
+        }
+        else if(arr[mid] > x)r = mid - 1;
+        else{
+            l = mid + 1;
+            if( mid > res) res = mid;
+        }
+    }
+
+    return res  + 1;
+}
+
 
 
 int main(){
 
     optimize;
+
+    int n, q;
+
+    cin >> n >> q;
+
+    vi arr(n);
+
+    for(int i = 0; i < n; i++) cin>> arr[i];
+
+    for(int i = 0; i < q; i++){
+        int x;
+        cin >> x;
+       cout << binarySearch(arr,x) << endl;
+    }
+
     
 
 }
