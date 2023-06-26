@@ -1,12 +1,5 @@
-# Ignore Everything
-*
+*.exe
+/codes
+.vscode
 
-# But not .py, .cpp, .c, .cc
-!*.py
-!*.cpp
-!*.c
-!*.cc
-# Or directories
-!*/
-!.gitignore
-!README.md
+
