@@ -4,6 +4,7 @@
 #define vi vector<int>
 #define vvi vector<vector<int>>
 #define pii pair<int,int>
+#define ALL(x) x.begin(),x.end()
 #define MAXN 1000000
 #define INF 1000000007
 #define MOD 1000000007
