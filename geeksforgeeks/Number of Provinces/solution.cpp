@@ -10,11 +10,7 @@ void dfs(vector<vector<int>>& adj, vector<int>& visited,int node,int V){
     
     for(int i = 0; i < V; i++){
         if(adj[node][i] == 1 && visited[i] == -1) dfs(adj,visited,i,V);
-    }
-    
-    
-    
-    
+    } 
 }
 
 int numProvinces(vector<vector<int>> adj, int V) {
